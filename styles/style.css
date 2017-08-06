@@ -3,69 +3,124 @@
     -webkit-box-shadow:inset 0px 0px 0px 10px #0f0;
     -moz-box-shadow:inset 0px 0px 0px 10px #0f0;
     box-shadow:inset 0px 0px 0px 10px #0f0;
-} */   
-*, *::before, *::after {
+} */
+
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
+
 html {
     box-sizing: border-box;
-    overflow: hidden;  
+    overflow: hidden;
 }
-body {
-  margin:0;
 
+body {
+    margin: 0;
+    background-color: black;
 }
-.Bg_img{
-  text-align: center;
-  background-color: black;
+
+p {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2.5em;
 }
-.Bg_img img{
-  height:100%;
+
+.Bg_img {
+    text-align: center;
+    background-color: black;
 }
+
+.Bg_img img {
+    height: 100%;
+}
+
 .title {
-  color: white;
     font-size: 4em;
     font-family: 'League Spartan', sans-serif;
     font-weight: 300;
     text-transform: uppercase;
 }
+
 .sub_title {
-  color: white;
-  font-size: 3.5em;
-  font-family: 'Libre Baskerville', serif;
-  font-weight: normal;
-  font-style: italic;
+    font-size: 3.5em;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: normal;
+    font-style: italic;
 }
-.top_left{
-  position: absolute;
-  top: 2%;
-  left: 2%;
+
+.center_large {
+    text-align: center;
+    font-size: 4em;
 }
-.top_right{
-  position: absolute;
-  top: 2%;
-  right: 2%;
+
+.top_left {
+    position: absolute;
+    top: 2%;
+    left: 2%;
 }
-.bottom_right{
-  position: absolute;
-  bottom: 2%;
-  right: 2%;
+
+.top_right {
+    position: absolute;
+    top: 2%;
+    right: 2%;
 }
-.bottom_left{
-  position: absolute;
-  bottom: 2%;
-  left: 2%;
+
+.bottom_right {
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
 }
-.clear {
-  background: linear-gradient(to bottom, transparent,transparent 60%, black);
+
+.bottom_left {
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
 }
-.solid {
-  color: white;
+.padding_small{
   padding: 2%;
 }
-.teal {
-  background-color: #00817A;
+
+.gradient_to_bottom {
+    background: linear-gradient(to bottom, transparent, transparent 60%, black);
 }
+
+.gradient_to_top {
+    background: linear-gradient(to bottom, black 20%, transparent);
+}
+
+.black_text {
+    color: black;
+}
+.black {
+  background-color: black;
+}
+
+.white_text {
+    color: white;
+/*    padding: 2%;*/
+}
+
+.white {
+    background-color: white;
+}
+
+.teal {
+    background-color: #00817A;
+}
+
+.copper {
+    background-color: #AD6F2F;
+}
+
+.justify {}
+
+.panel {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
 /*Defining the height and perspective style 
 properties of an element will lock the 
 perspective to its centre, 
@@ -74,37 +129,46 @@ Setting overflow-y: auto will allow the
 content inside the element to scroll in the 
 usual way, but now descendant elements 
 will be rendered relative to the fixed perspective.*/
+
 .parallax {
-  perspective: 1px;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  perspective-origin-x: 100%;
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective-origin-x: 100%;
 }
+
 .parallax__group {
-  position: relative; /*allow the child parallax__layer elements to be positioned relative to the group element.*/
-  height: 100vh; /* fills the viewport*/
-  transform-style: preserve-3d; /* prevents flattening parallax__layer*/
-  /*transform: translate3d(700px, 0, -800px) rotateY(30deg);*/
+    position: relative;
+    /*allow the child parallax__layer elements to be positioned relative to the group element.*/
+    height: 100vh;
+    /* fills the viewport*/
+    transform-style: preserve-3d;
+    /* prevents flattening parallax__layer*/
+    /*transform: translate3d(700px, 0, -800px) rotateY(30deg);*/
 }
+
+
 /*defines a layer of content to 
 which the parallax effect will be 
 applied; the element is pulled out 
 of content flow and configured to 
 fill the space of the container.*/
+
 .parallax__layer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform-origin-x: 100%;
-
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin-x: 100%;
 }
+
 .parallax__layer--base {
-  transform: translateZ(0);
-
+    transform: translateZ(0);
 }
+
+
 /*z of negative will give the effect
 of the element being "behind"
 the base layer and thus appear to
@@ -113,11 +177,11 @@ To over come the side effect of
 an object appearing smaller 
 when farther away, we can scale:
 1 + (translateZ * -1) / perspective */
+
 .parallax__layer--back {
-  transform: translateZ(-1px) scale(2);
+    transform: translateZ(-1px) scale(2);
 }
 
 .parallax__layer--deep {
-  transform: translateZ(-2px) scale(3);
-
+    transform: translateZ(-2px) scale(3);
 }
