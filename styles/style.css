@@ -21,9 +21,10 @@ body {
     background-color: black;
 }
 
-p {
+p, li, a {
     font-family: 'Libre Baskerville', serif;
     font-size: 2.5em;
+    text-decoration: none;
 }
 
 .Bg_img {
@@ -113,13 +114,20 @@ p {
     background-color: #AD6F2F;
 }
 
-.justify {}
-
 .panel {
     text-align: justify;
     text-justify: inter-word;
 }
-
+.project_image {
+  width:100%;
+  text-align: center;
+  /*background-color: black;*/
+}
+.view_proj_button {
+  border: 1px white solid;
+  text-align: center;
+  color: white;
+}
 
 /*Defining the height and perspective style 
 properties of an element will lock the 
