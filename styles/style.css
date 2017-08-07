@@ -161,6 +161,9 @@ ul {
 .icons {
   font-size:4em;
 }
+.no_click {
+  pointer-events: none;
+}
 
 
 /*Defining the height and perspective style 

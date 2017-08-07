@@ -4,6 +4,9 @@
     <link href="styles/style.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="scripts/script.js" type="text/javascript"></script>
+
 </head>
 
 <body>
@@ -11,8 +14,8 @@
         <div id="group1" class="parallax__group gradient_to_bottom">
             <div class="parallax__layer parallax__layer--base white_text">
                 <div class="title top_left">Maks Fisli</div>
-                <div class="title top_right">Projects</div>
-                <div class="title bottom_right">Contact</div>
+                <div id="project_btn" class="title top_right">Projects</div>
+                <div id="contact_btn" class="title bottom_right">Contact</div>
             </div>
             <div class="parallax__layer parallax__layer--deep">
                 <div class="Bg_img">
@@ -23,14 +26,14 @@
         <div id="group2" class="parallax__group">
             <div class="parallax__layer parallax__layer--base gradient_to_top">
                 <div class="panel teal white_text padding_small">
-                    <div class="title">Hello</div>
+                    <div id="about" class="title ">Hello</div>
                     <div class="sub_title"> I'm a Web Developer </div>
                     <p> I'm curious, creative, and I like to get my hands dirty. I love joining forces with remarkable people to take challenges head on.</p>
                 </div>
             </div>
         </div>
-        <div class="parallax__layer parallax__layer--back white_text">
-            <div class="title bottom_left">About</div>
+        <div class="parallax__layer parallax__layer--back no_click white_text">
+            <div id="about_btn" class="title bottom_left">About</div>
         </div>
         <div id="group3" class="parallax__group">
             <!--             <div class="parallax__layer parallax__layer--fore copper">
@@ -115,21 +118,19 @@
                         </a>
                     </div>
                 </div>
-                <div class="panel black white_text padding_small">
+                <div id="contact" class="panel black white_text padding_small">
                     <div class="sub_title">Say hi</div>
                     <p>
                         <a class="email" href="mailto:mfisli2@gmail.com" target="_top">
                             Email me</a> if you'd like to work together.
-                            <br > Thanks for coming by!
-                        </p>
-                        <div class="icons">
-                            <a class="fa fa-github"></a>
-                            <a class="fa fa-instagram"></a>
-                            <a class="fa fa-linkedin"></a>
-                            <a class="fa fa-twitter"></a>
-                        </div>
-
-
+                        <br> Thanks for coming by!
+                    </p>
+                    <div class="icons">
+                        <a class="fa fa-github"></a>
+                        <a class="fa fa-instagram"></a>
+                        <a class="fa fa-linkedin"></a>
+                        <a class="fa fa-twitter"></a>
+                    </div>
                 </div>
                 <footer class="footer">
                     <hr />
