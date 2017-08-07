@@ -21,10 +21,16 @@ body {
     background-color: black;
 }
 
-p, li, a {
-    font-family: 'Libre Baskerville', serif;
+p,
+li,
+a {
+    font-family: 'League Spartan', sans-serif;
     font-size: 2.5em;
     text-decoration: none;
+        font-weight: 300;
+}
+ul {
+  padding-bottom: 5%;
 }
 
 .Bg_img {
@@ -78,8 +84,9 @@ p, li, a {
     bottom: 2%;
     left: 2%;
 }
-.padding_small{
-  padding: 2%;
+
+.padding_small {
+    padding: 5%;
 }
 
 .gradient_to_bottom {
@@ -93,13 +100,14 @@ p, li, a {
 .black_text {
     color: black;
 }
+
 .black {
-  background-color: black;
+    background-color: black;
 }
 
 .white_text {
     color: white;
-/*    padding: 2%;*/
+    /*    padding: 2%;*/
 }
 
 .white {
@@ -113,21 +121,34 @@ p, li, a {
 .copper {
     background-color: #AD6F2F;
 }
+.project_text_wrap {
+  padding-bottom: 5%;
+}
 
 .panel {
     text-align: justify;
     text-justify: inter-word;
 }
+
 .project_image {
-  width:100%;
-  text-align: center;
-  /*background-color: black;*/
+    width: 100%;
+    text-align: center;
+    /*background-color: black;*/
 }
+
 .view_proj_button {
-  border: 1px white solid;
-  text-align: center;
-  color: white;
+    border: 1px white solid;
+    text-align: center;
+    color: white;
 }
+
+.email {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1em;
+    color: white;
+    text-decoration: underline;
+}
+
 
 /*Defining the height and perspective style 
 properties of an element will lock the 
